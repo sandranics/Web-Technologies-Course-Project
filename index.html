@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple SVG Star Editor</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+  </head>
+  <body>
+    <div class="container">
+        <h1>Simple SVG Star Editor</h1>
+          <div>
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="colorFill">Color Fill</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="colorFill"
+                  name="colorFill"
+                />
+              </div>
+              <div class="form-group">
+                <label for="outlineColor">Outline Color</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="outlineColor"
+                  name="outlineColor"
+                />
+              </div>
+              <div class="form-group">
+                <label for="shape">Shape</label>
+                <div>
+                  <label for="circle"
+                    ><input
+                      type="radio"
+                      name="shape"
+                      value="circle"
+                      id="circle"
+                    />Circle</label
+                  >
+                  <label for="rect" 
+                    ><input
+                      type="radio"
+                      name="shape"
+                      value="rect"
+                      id="rect"
+                    />Rectangle</label
+                  >
+                  <label for="star" 
+                    ><input
+                      type="radio"
+                      name="shape"
+                      value="star"
+                      id="star"
+                    />Star</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="height">Height</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="height"
+                  name="height"
+                />
+              </div>
+              <div class="form-group">
+                <label for="width">Width</label>
+                <input
+                  type="width"
+                  class="form-control"
+                  id="width"
+                  name="width"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="animation">Animation</label>
+                <div>
+                  <label for="blinking" 
+                    ><input
+                      type="radio"
+                      name="animation"
+                      value="blinking"
+                      id="blinking"
+                    />Blinking</label
+                  >
+                  <label for="static"
+                    ><input
+                      type="radio"
+                      name="animation"
+                      value="static"
+                      id="static"
+                    />Static</label
+                  >
+                </div>
+              </div>
+              <input type="submit" class="btn" />
+            </form>
+            <br/>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
